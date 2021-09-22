@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"> -->
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Exemplo de Formulário para compra on-line.</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style> 
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="container2">
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4 " src="./img/walmart.jpg" alt="" width="400" height="200">  
+            <h2>Formulário de compra</h2>
+            <p class="lead">Formulário de compra on-line, preencher todas as informações corretamente</p>
+          </div>
+        
+        
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Seu Carrinho</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Primeiro produto</h6>
+                  <small class="text-muted">Maquina de barbear, 6 meses de garantia</small>
+                </div>
+                <span class="text-muted">$200</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Segundo produto</h6>
+                  <small class="text-muted">Tenis nike, airmax, com 1 ano de garantia</small>
+                </div>
+                <span class="text-muted">R$ 800</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Terceiro produto</h6>
+                  <small class="text-muted">Relógio preto, marca tagHeuer, com 1 ano de garantia</small>
+                </div>
+                <span class="text-muted">R$ 500</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">CÓDIGO DE PROMOÇÃO</h6>
+                  <small>CÓDIGO PROMOCINAL</small>
+                </div>
+                <span class="text-success">R$ -100</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (R$)</span>
+                <strong>R$ 1400</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="code promo">
+                <button type="submit" class="btn btn-secondary">Resgatar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Endereço de Faturamento</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nome próprio</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    É necessário ter o primeiro nome válido.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apelido</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    é necessário um sobrenome válido 
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label">Usuário</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Usuário" required>
+                  <div class="invalid-feedback">
+                    Seu nome de usuário é necessário.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                  <div class="invalid-feedback">
+                    Por favor, insira um endereço de e-mail válido para atualizações de envio.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="address" placeholder="ex: LT 4 QD 4" required>
+                  <div class="invalid-feedback">
+                    Por favor, digite seu endereço de envio.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label">Complemento <span class="text-muted">(Opcional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suite">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="Pais" class="form-label">Pais</label>
+                  <select class="form-select" id="Pais" required>
+                    <option value="">Escolher...</option>
+                    <option>Brasil</option>
+                    <option>Belgica</option>
+                    <option>Alemanha</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, selecione um país válido.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Escolher...</option>
+                    <option>RIO de janeiro</option>
+                    <option>Berlim</option>
+                    <option>bruxelas</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, forneça um estado válido. 
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="zip" placeholder=" Digite o CEP " required>
+                  <div class="invalid-feedback">
+                    Ceep necessário
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">endereço de envio é o mesmo que meu endereço de cobrança</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Salvar essas informações para proxima vez.</label>
+              </div>
+
+              <hr class="my-4">
+
+              <h4 class="mb-3">PAGAMENTO</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Cartão de crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Cartão de débito</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">Mercado Pago</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nome no cartão</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">numero completo exibido no cartão.</small>
+                  <div class="invalid-feedback">
+                    Nome no cartão é necessário
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Número do cartão de crédito é necessário
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiração</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Data de validade necessária
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    código de segurança necessário
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Continue preenchendo o formulário</button>
+            </form>
+          </div>
+        </div>
+  
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017–2021 doug-tech</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacidade</a></li>
+          <li class="list-inline-item"><a href="#">Termos</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>  
+  
+  </main>
+
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> 
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
