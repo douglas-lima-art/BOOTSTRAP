@@ -1,5 +1,7 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
+  alert ('Ao clicar em " Ok ", Você dara continuidade a sua compra !! ') ;
+  
   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -18,3 +20,7 @@
       }, false)
     })
 })()
+
+// Function {
+//   alert ('Dá uma moral ai professor !! ') ;
+// }
